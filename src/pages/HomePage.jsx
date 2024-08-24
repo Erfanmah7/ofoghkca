@@ -3,6 +3,8 @@ import React from "react";
 function HomePage() {
   return (
     <div className="mt-[246px] flex flex-col justify-center md:container">
+
+      {/* banner */}
       <div
         href="#"
         className="relative w-full flex justify-center h-[461px] bg-zinc-100  rounded-[42px] overflow-hidden"
@@ -26,6 +28,8 @@ function HomePage() {
           </div>
         </div>
       </div>
+
+{/* boxs */}
 
       <div className="grid grid-cols-3 mt-10 gap-x-[33px] text-xl font-DanaMedium">
         <div className="rounded-[20px]  bg-violet-100  h-[99px] flex justify-between items-center px-8">
@@ -64,6 +68,16 @@ function HomePage() {
           </a>
         </div>
       </div>
+
+
+{/* box card */}
+
+<div className="w-full h-[541px] rounded-[25px] bg-violet-300 mt-20">
+
+
+
+</div>
+
     </div>
   );
 }
