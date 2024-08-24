@@ -198,7 +198,7 @@ function Header() {
         </symbol>
       </svg>
 
-      <header className="fixed top-0 left-0 right-0 mb-[31px]">
+      <header className=" fixed justify-center flex flex-col top-0 left-0 right-0 mb-[41px]">
         {/* header top */}
         <a
           href="#"
@@ -211,10 +211,10 @@ function Header() {
           </h3>
         </a>
         {/* header main */}
-        <div className="mt-[31px] flex justify-between items-center gap-x-10 container">
+        <div className="mt-[31px] flex justify-between md:container items-center gap-x-10 ">
           {/* logo */}
           <div className="flex">
-            <div>
+            <div className="shrink-0 ">
               <img
                 className="h-[55px] bg-cover"
                 src="../assets/images/logo.png"
@@ -304,7 +304,7 @@ function Header() {
         </div>
 
         {/* sub header */}
-        <div className="flex justify-between items-center mt-[57px] mb-[41px] container">
+        <div className="flex justify-between items-center md:container mt-[57px]">
           {/* menu        */}
           <div>
             <nav>
@@ -348,72 +348,6 @@ function Header() {
             <div>
               شماره تماس: <span className="text-violet-700">32257071-035</span>
             </div>
-          </div>
-        </div>
-
-        {/* banner */}
-
-        <div className="container flex justify-center">
-          <div
-            href="#"
-            className="relative w-full flex justify-center h-[461px] bg-zinc-100 mx-auto rounded-[42px] overflow-hidden"
-          >
-            <img
-              className="absolute bottom-0  text-white w-40 z-20"
-              src="../assets/svg/toggle.svg"
-            />
-
-            <a href="#" className="bottom-0 absolute flex justify-center">
-              <svg className="z-30 h-[30px] w-[30px] rounded-full p-1 bg-violet-700 text-white">
-                <use href="#arrow-b"></use>
-              </svg>
-            </a>
-
-            <div className="-bottom-20 absolute z-10">
-              <div className="circle circle-lg">
-                <div className="circle circle-md">
-                  <div className="circle circle-sm"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="grid grid-cols-3 container mt-10 gap-x-[33px] text-xl font-DanaMedium">
-          <div className="rounded-[20px]  bg-violet-100  h-[99px] flex justify-between items-center px-8">
-          <svg className="z-30 h-14 w-14 p-1">
-                <use href="#education"></use>
-              </svg>
-            <h3>آموزش و ورکشاپ</h3>
-            <a href="#">
-              <svg className="z-30 h-10 w-10 rounded-full p-1 bg-violet-700 text-white rotate-90">
-                <use href="#arrow-b"></use>
-              </svg>
-            </a>
-          </div>
-
-          <div className="rounded-[20px]  bg-orange-100 h-[99px] flex justify-between items-center px-8">
-          <svg className="z-30 h-14 w-14 p-1">
-                <use href="#art"></use>
-              </svg>
-            <h3>فرهنگی و هنری</h3>
-            <a href="#">
-              <svg className="z-30 h-10 w-10 rounded-full p-1 bg-orange-300 text-white rotate-90">
-                <use href="#arrow-b"></use>
-              </svg>
-            </a>
-          </div>
-
-          <div className="rounded-[20px]  bg-indigo-100 h-[99px] flex justify-between items-center px-8">
-          <svg className="z-30 h-14 w-14 p-1">
-                <use href="#media"></use>
-              </svg>
-            <h3>رسانه و ارتباطات</h3>
-            <a href="#">
-              <svg className="z-30 h-10 w-10 rounded-full p-1 bg-indigo-400 text-white rotate-90">
-                <use href="#arrow-b"></use>
-              </svg>
-            </a>
           </div>
         </div>
       </header>

@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @layer base {
+
   @font-face {
     font-family: "Dana";
     src: url("../fonts/Dana/woff2/DanaFaNum-Regular.woff2") format("woff2");
