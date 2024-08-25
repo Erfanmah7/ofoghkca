@@ -18,7 +18,8 @@ function Header() {
 
   return (
     <div>
-      <header className="z-50 backdrop-blur-xl bg-white/30  fixed justify-center flex flex-col top-0 left-0 right-0 pb-[40px]">
+      {/* backdrop-blur-xl bg-white/30 */}
+      <header className="z-50 fixed justify-center flex flex-col top-0 left-0 right-0 pb-[40px]">
         {/* header top */}
         <a
           href="#"
@@ -63,29 +64,33 @@ function Header() {
           <div className="flex justify-center items-center gap-10">
             <div className="flex items-center gap-x-3">
               <div>
-                <span className="flex items-center justify-center w-[43px] h-[43px] border-[3.5px] border-violet-700 rounded-xl p-1">
-                  <svg className="text-violet-700 h-6 w-6">
+                <span className="flex items-center justify-center w-[43px] h-[43px] border-[3.5px] dark:border-violet-600 border-violet-700 rounded-xl p-1">
+                  <svg className="text-violet-700 dark:text-violet-600 h-6 w-6">
                     <use href="#check"></use>
                   </svg>
                 </span>
               </div>
-              <div className="flex flex-col items-start">
+              <div className="flex flex-col items-start dark:text-white text-black">
                 <h3 className="font-DanaDemiBold">رسالت این مؤسسه</h3>
-                <span className="text-black/[26%]">حمایت از سرمایه ها</span>
+                <span className="text-black/[26%] dark:text-white/[26%]">
+                  حمایت از سرمایه ها
+                </span>
               </div>
             </div>
 
             <div className="flex items-center gap-x-3">
               <div>
                 <span className="flex items-center justify-center">
-                  <svg className="text-violet-700 w-[50px] h-[50px] ">
+                  <svg className="text-violet-700  dark:text-violet-600 w-[50px] h-[50px] ">
                     <use href="#star"></use>
                   </svg>
                 </span>
               </div>
-              <div className="flex flex-col items-start">
+              <div className="flex flex-col items-start  dark:text-white text-black">
                 <h3 className="font-DanaDemiBold">رویکرد این مؤسسه</h3>
-                <span className="text-black/[26%]">شناسایی افراد نخبه</span>
+                <span className="text-black/[26%]  dark:text-white/[26%]">
+                  شناسایی افراد نخبه
+                </span>
               </div>
             </div>
           </div>
@@ -94,7 +99,7 @@ function Header() {
           <div className="flex gap-x-[29px] items-center justify-center">
             <a href="#">
               <div className="relative">
-                <svg className="h-[43px] w-[43px]">
+                <svg className="h-[43px] w-[43px] dark:text-white text-black ">
                   <use href="#shop"></use>
                 </svg>
                 <span className="absolute right-0 top-0 flex items-center justify-center left-2.5 bg-orange-300 text-white p-px  rounded-full w-[22px] h-[22px]">
@@ -105,18 +110,18 @@ function Header() {
 
             {/* dark mode */}
             <div class="cursor-pointer" onClick={() => setMod(!mod)}>
-              <svg class="h-[43px] w-[43px] inline-block dark:hidden">
+              <svg class="h-[43px] w-[43px]  dark:text-white text-black inline-block dark:hidden">
                 <use href="#moon-icon"></use>
               </svg>
 
-              <svg class="h-[43px] w-[43px] hidden dark:inline-block">
+              <svg class="h-[43px] w-[43px] dark:text-white text-black  hidden dark:inline-block">
                 <use href="#sun-icon"></use>
               </svg>
             </div>
 
             {/* login */}
             <a href="#">
-              <svg className="h-[43px] w-[43px]">
+              <svg className="h-[43px] w-[43px] dark:text-white text-black ">
                 <use href="#login"></use>
               </svg>
             </a>
@@ -124,13 +129,16 @@ function Header() {
         </div>
 
         {/* sub header */}
-        <div className="flex justify-between items-center md:container mt-[57px]">
+        <div className="flex justify-between dark:text-white text-black items-center md:container mt-[57px]">
           {/* menu        */}
           <div>
             <nav>
               <ul className="flex gap-x-[31px] font-DanaDemiBold  text-xl">
                 <li>
-                  <a href="#" className="flex text-violet-700 gap-x-px">
+                  <a
+                    href="#"
+                    className="flex dark:text-violet-600 text-violet-700 gap-x-px"
+                  >
                     خانه
                     <svg className="h-6 w-6">
                       <use href="#arrow-b"></use>
@@ -166,7 +174,7 @@ function Header() {
               </svg>
             </div>
             <div>
-              شماره تماس: <span className="text-violet-700">32257071-035</span>
+              شماره تماس: <span className="text-violet-700 dark:text-violet-600">32257071-035</span>
             </div>
           </div>
         </div>

@@ -8,10 +8,9 @@ function HomePage() {
         href="#"
         className="relative w-full flex justify-center h-[461px] bg-zinc-100  rounded-[42px] overflow-hidden"
       >
-        <img
-          className="absolute bottom-0  text-white w-40 z-20"
-          src="../assets/svg/toggle.svg"
-        />
+        <svg className="z-30 absolute -bottom-14 w-36 dark:text-zinc-700 text-white">
+          <use href="#curev"></use>
+        </svg>
 
         <a href="#" className="bottom-0 absolute flex justify-center">
           <svg className="z-30 h-[30px] w-[30px] rounded-full p-1 bg-violet-700 text-white">
