@@ -6,7 +6,7 @@ function HomePage() {
       {/* banner */}
       <div
         href="#"
-        className="relative w-full flex justify-center h-[461px] bg-zinc-100  rounded-[42px] overflow-hidden"
+        className="banner bg-cover bg-no-repeat relative w-full flex justify-center h-[461px] bg-zinc-100  rounded-[42px] overflow-hidden"
       >
         <svg className="z-30 absolute -bottom-14 w-36 dark:text-zinc-700 text-white">
           <use href="#curev"></use>
