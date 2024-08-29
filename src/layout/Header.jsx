@@ -37,8 +37,14 @@ function Header() {
           <div className="flex">
             <div className="shrink-0 ">
               <img
-                className="h-[55px] bg-cover"
+                className="h-[55px] dark:hidden inline-block bg-cover"
                 src="../assets/images/logo.png"
+                alt="ofoghkca"
+              />
+
+              <img
+                className="h-[55px] hidden dark:inline-block bg-cover"
+                src="../assets/images/logodark.png"
                 alt="ofoghkca"
               />
             </div>
@@ -48,7 +54,7 @@ function Header() {
               <input
                 type="text"
                 placeholder="بگو چی میخوای تا برات پیداش کنم ..."
-                className="rounded-full w-[484px] h-[55px] px-8 outline-none mr-7 bg-zinc-100"
+                className="rounded-full w-[484px] h-[55px] px-8 outline-none mr-7 dark:bg-zinc-500 dark:placeholder-white bg-zinc-100"
               />
               <a
                 href="#"
@@ -174,7 +180,10 @@ function Header() {
               </svg>
             </div>
             <div>
-              شماره تماس: <span className="text-violet-700 dark:text-violet-600">32257071-035</span>
+              شماره تماس:{" "}
+              <span className="text-violet-700 dark:text-violet-600">
+                32257071-035
+              </span>
             </div>
           </div>
         </div>

@@ -71,8 +71,7 @@ function HomePage() {
 
       <div className="w-full relative h-[389px] rounded-[25px] text-white bg-violet-700 mt-[41px] mb-[264px]">
         <h3 className="mt-[90px] text-2xl mb-8 font-DanaMedium">
-          آژانس دیجیتال مارکتینگ دیمالند، چگونه به توسعه کسب و کار شما کمک می
-          کند؟
+          متا فراتر از هر تابستان
         </h3>
         <div className="flex justify-center items-center mb-[75px]">
           <span className="bg-orange-300 h-1 w-[150px] flex rounded-full"></span>
@@ -103,7 +102,7 @@ function HomePage() {
                 بررسی حوزه فعالیت و ارائه روش‌های نوین
               </p>
             </div>
-            <div className="z-20 bg-white/20 absolute -rotate-12 w-[320px] h-[304px] rounded-[18px]"></div>
+            <div className="z-20 bg-white/20 dark:bg-zinc-700/20 absolute -rotate-12 w-[320px] h-[304px] rounded-[18px]"></div>
           </div>
           <div className="bg-white text-black w-[320px] h-[304px] rounded-[18px] shadow-md flex flex-col items-center justify-center px-7 pt-[49px] pb-[54px]">
             <div className="w-16 h-16 flex justify-center items-center rounded-full bg-gradient-to-t to-orange-300 from-white">
