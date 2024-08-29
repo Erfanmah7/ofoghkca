@@ -115,12 +115,12 @@ function Header() {
             </a>
 
             {/* dark mode */}
-            <div class="cursor-pointer" onClick={() => setMod(!mod)}>
-              <svg class="h-[43px] w-[43px]  dark:text-white text-black inline-block dark:hidden">
+            <div className="cursor-pointer" onClick={() => setMod(!mod)}>
+              <svg className="h-[43px] w-[43px]  dark:text-white text-black inline-block dark:hidden">
                 <use href="#moon-icon"></use>
               </svg>
 
-              <svg class="h-[43px] w-[43px] dark:text-white text-black  hidden dark:inline-block">
+              <svg className="h-[43px] w-[43px] dark:text-white text-black  hidden dark:inline-block">
                 <use href="#sun-icon"></use>
               </svg>
             </div>
