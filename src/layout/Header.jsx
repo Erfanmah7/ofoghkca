@@ -23,7 +23,7 @@ function Header() {
         {/* header top */}
         <a
           href="#"
-          className="flex items-center justify-center gap-x-2 bg-violet-700 w-full h-[68px] font-MorabbaMedium tracking-normal text[22px]"
+          className="flex items-center justify-center gap-x-2 bg-violet-700 w-full h-[40px] md:h-[68px] font-MorabbaMedium tracking-normal text-sm md:text[22px]"
         >
           <h3 className="text-white">
             {" "}
@@ -32,7 +32,7 @@ function Header() {
           </h3>
         </a>
         {/* header main */}
-        <div className="mt-[31px] flex justify-between md:container items-center gap-x-10 ">
+        <div className="mt-[31px] hidden md:flex justify-between md:container items-center gap-x-10 ">
           {/* logo */}
           <div className="flex">
             <div className="shrink-0 ">
@@ -135,7 +135,7 @@ function Header() {
         </div>
 
         {/* sub header */}
-        <div className="flex justify-between dark:text-white text-black items-center md:container mt-[57px]">
+        <div className="hidden md:flex justify-between dark:text-white text-black items-center md:container mt-[57px]">
           {/* menu        */}
           <div>
             <nav>

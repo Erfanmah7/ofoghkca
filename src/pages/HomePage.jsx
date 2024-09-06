@@ -31,11 +31,11 @@ function HomePage() {
 
       <div className="grid grid-cols-3 mt-10 gap-x-[33px] text-xl font-DanaMedium">
         <div className="rounded-[20px]  bg-violet-100  h-[99px] flex justify-between items-center px-8">
-          <svg className="z-30 h-14 w-14 p-1">
+          <svg className="z-30 h-14 w-14 p-1 md:inline-block hidden">
             <use href="#education"></use>
           </svg>
           <h3>آموزش و ورکشاپ</h3>
-          <a href="#">
+          <a href="#" className="md:inline-block hidden">
             <svg className="z-30 h-10 w-10 rounded-full p-1 bg-violet-700 text-white rotate-90">
               <use href="#arrow-b"></use>
             </svg>
@@ -43,11 +43,11 @@ function HomePage() {
         </div>
 
         <div className="rounded-[20px]  bg-orange-100 h-[99px] flex justify-between items-center px-8">
-          <svg className="z-30 h-14 w-14 p-1">
+          <svg className="z-30 h-14 w-14 p-1 md:inline-block hidden">
             <use href="#art"></use>
           </svg>
           <h3>فرهنگی و هنری</h3>
-          <a href="#">
+          <a href="#" className="md:inline-block hidden">
             <svg className="z-30 h-10 w-10 rounded-full p-1 bg-orange-300 text-white rotate-90">
               <use href="#arrow-b"></use>
             </svg>
@@ -55,11 +55,11 @@ function HomePage() {
         </div>
 
         <div className="rounded-[20px]  bg-indigo-100 h-[99px] flex justify-between items-center px-8">
-          <svg className="z-30 h-14 w-14 p-1">
+          <svg className="z-30 h-14 w-14 p-1 md:inline-block hidden">
             <use href="#media"></use>
           </svg>
           <h3>رسانه و ارتباطات</h3>
-          <a href="#">
+          <a href="#" className="md:inline-block hidden">
             <svg className="z-30 h-10 w-10 rounded-full p-1 bg-indigo-400 text-white rotate-90">
               <use href="#arrow-b"></use>
             </svg>
