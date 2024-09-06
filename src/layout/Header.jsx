@@ -191,7 +191,7 @@ function Header() {
       {/* header mobile */}
 
       <header className="inline-block md:hidden">
-        <div className="backdrop-blur-md bg-white/80 dark:bg-zinc-800/95 shadow w-full h-20 flex justify-between items-center px-6">
+        <div className="backdrop-blur-md bg-white/80 dark:bg-zinc-800/95 shadow w-full h-20 flex justify-between items-center px-4">
           <div>
             <a href="#">
               <div>
