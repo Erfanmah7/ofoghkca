@@ -204,7 +204,7 @@ function Header() {
 
           <div className="shrink-0 ">
             <img
-              className="h-[40px] dark:hidden inline-block bg-cover"
+              className="h-[30px] dark:hidden inline-block bg-cover"
               src="../assets/images/logo.png"
               alt="ofoghkca"
             />
