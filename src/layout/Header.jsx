@@ -222,7 +222,7 @@ function Header() {
                 <svg className="h-[30px] w-[30px] dark:text-white text-black ">
                   <use href="#shop"></use>
                 </svg>
-                <span className="absolute right-0 top-0 flex items-center justify-center left-2.5 bg-orange-300 text-white p-px  rounded-full w-[22px] h-[22px]">
+                <span className="absolute right-0 top-0 flex items-center justify-center left-2.5 bg-orange-300 text-white dark:text-black p-px text-xs rounded-full w-[17px] h-[17px]">
                   3
                 </span>
               </div>
