@@ -2,11 +2,11 @@ import React from "react";
 
 function HomePage() {
   return (
-    <div className="md:mt-[246px] mt-[125px] flex flex-col justify-center container md:container">
+    <div className="md:mt-[346px] mt-[120px] flex flex-col justify-center md:container">
       {/* banner */}
       <div
         href="#"
-        className="bg-cover bg-no-repeat md:relative w-full flex justify-center h-[461px] bg-zinc-100  md:rounded-[42px] rounded-[30px] overflow-hidden"
+        className="bg-cover bg-no-repeat md:relative w-full flex justify-center h-[461px] bg-zinc-100  md:rounded-[42px] overflow-hidden"
       >
         <svg className="hidden md:inline-block z-30 md:absolute -bottom-14 w-36 dark:text-zinc-700 text-white">
           <use href="#curev"></use>
@@ -29,8 +29,8 @@ function HomePage() {
 
       {/* boxs */}
 
-      <div className="grid md:grid-cols-3 grid-cols-1 mt-10 gap-y-3 md:gap-x-[33px] text-xl font-DanaMedium">
-        <div className="rounded-[20px]  bg-violet-100  h-[99px] flex justify-between items-center px-8">
+      <div className="grid md:grid-cols-3 grid-cols-1 container mt-10 gap-y-3 md:gap-x-[33px] text-xl font-DanaMedium">
+        <div className="rounded-[10px]  bg-violet-100  h-[99px] flex justify-between items-center px-8">
           <svg className="z-30 h-14 w-14 p-1 md:inline-block hidden">
             <use href="#education"></use>
           </svg>
@@ -42,7 +42,7 @@ function HomePage() {
           </a>
         </div>
 
-        <div className="rounded-[20px]  bg-orange-100 h-[99px] flex justify-between items-center px-8">
+        <div className="rounded-[10px]  bg-orange-100 h-[99px] flex justify-between items-center px-8">
           <svg className="z-30 h-14 w-14 p-1 md:inline-block hidden">
             <use href="#art"></use>
           </svg>
@@ -54,7 +54,7 @@ function HomePage() {
           </a>
         </div>
 
-        <div className="rounded-[20px]  bg-indigo-100 h-[99px] flex justify-between items-center px-8">
+        <div className="rounded-[10px]  bg-indigo-100 h-[99px] flex justify-between items-center px-8">
           <svg className="z-30 h-14 w-14 p-1 md:inline-block hidden">
             <use href="#media"></use>
           </svg>
