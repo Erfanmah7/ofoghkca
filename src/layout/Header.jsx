@@ -21,7 +21,7 @@ function Header() {
       {/* header top */}
       <a
         href="#"
-        className="flex items-center justify-center gap-x-2 bg-violet-700 w-full h-[30px] md:h-[68px] font-MorabbaMedium tracking-normal text-xs md:text[22px]"
+        className="flex items-center justify-center gap-x-2 bg-violet-700 w-full h-[30px] md:h-[68px] font-DanaMedium tracking-normal text-xs md:text[22px]"
       >
         <h3 className="text-white">
           {" "}
