@@ -17,20 +17,20 @@ function Header() {
   };
 
   return (
-    <div>
+    <div className="z-50 fixed justify-center flex flex-col top-0 left-0 right-0 pb-[40px]">
+      {/* header top */}
+      <a
+        href="#"
+        className="flex items-center justify-center gap-x-2 bg-violet-700 w-full h-[45px] md:h-[68px] font-MorabbaMedium tracking-normal text-sm md:text[22px]"
+      >
+        <h3 className="text-white">
+          {" "}
+          به انتهای افق بنگر؛ من و تو باید پرچم خودمان را آنجا بزنیم، در انتهای
+          افق ..
+        </h3>
+      </a>
       {/* backdrop-blur-xl bg-white/30 */}
-      <header className="z-50 fixed justify-center flex flex-col top-0 left-0 right-0 pb-[40px]">
-        {/* header top */}
-        <a
-          href="#"
-          className="flex items-center justify-center gap-x-2 bg-violet-700 w-full h-[40px] md:h-[68px] font-MorabbaMedium tracking-normal text-sm md:text[22px]"
-        >
-          <h3 className="text-white">
-            {" "}
-            به انتهای افق بنگر؛ من و تو باید پرچم خودمان را آنجا بزنیم، در
-            انتهای افق ..
-          </h3>
-        </a>
+      <header className="md:inline-block hidden">
         {/* header main */}
         <div className="mt-[31px] hidden md:flex justify-between md:container items-center gap-x-10 ">
           {/* logo */}
@@ -133,9 +133,8 @@ function Header() {
             </a>
           </div>
         </div>
-
         {/* sub header */}
-        <div className="hidden md:flex justify-between dark:text-white text-black items-center md:container mt-[57px]">
+        <div className="flex justify-between dark:text-white text-black items-center md:container mt-[57px]">
           {/* menu        */}
           <div>
             <nav>
@@ -185,6 +184,49 @@ function Header() {
                 32257071-035
               </span>
             </div>
+          </div>
+        </div>
+      </header>
+
+      {/* header mobile */}
+
+      <header className="inline-block md:hidden">
+        <div className="bg-white shadow w-full h-20 flex justify-between items-center px-8">
+          <div>
+            <a href="#">
+              <div>
+                <svg className="h-[43px] w-[43px] dark:text-white text-black ">
+                  <use href="#menu"></use>
+                </svg>
+              </div>
+            </a>
+          </div>
+
+          <div className="shrink-0 ">
+            <img
+              className="h-[55px] dark:hidden inline-block bg-cover"
+              src="../assets/images/logo.png"
+              alt="ofoghkca"
+            />
+
+            <img
+              className="h-[55px] hidden dark:inline-block bg-cover"
+              src="../assets/images/logodark.png"
+              alt="ofoghkca"
+            />
+          </div>
+
+          <div>
+            <a href="#">
+              <div className="relative">
+                <svg className="h-[43px] w-[43px] dark:text-white text-black ">
+                  <use href="#shop"></use>
+                </svg>
+                <span className="absolute right-0 top-0 flex items-center justify-center left-2.5 bg-orange-300 text-white p-px  rounded-full w-[22px] h-[22px]">
+                  3
+                </span>
+              </div>
+            </a>
           </div>
         </div>
       </header>
