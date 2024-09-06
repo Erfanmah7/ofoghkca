@@ -21,7 +21,7 @@ function Header() {
       {/* header top */}
       <a
         href="#"
-        className="flex items-center justify-center gap-x-2 bg-violet-700 w-full h-[45px] md:h-[68px] font-MorabbaMedium tracking-normal text-sm md:text[22px]"
+        className="flex items-center sticky top-0 justify-center gap-x-2 bg-violet-700 w-full h-[40px] md:h-[68px] font-MorabbaMedium tracking-normal text-sm md:text[22px]"
       >
         <h3 className="text-white">
           {" "}
@@ -191,7 +191,7 @@ function Header() {
       {/* header mobile */}
 
       <header className="inline-block md:hidden">
-        <div className="bg-white shadow w-full h-20 flex justify-between items-center px-8">
+        <div className="backdrop-blur-md bg-white/80  shadow w-full h-20 flex justify-between items-center px-8">
           <div>
             <a href="#">
               <div>
