@@ -2,23 +2,23 @@ import React from "react";
 
 function HomePage() {
   return (
-    <div className="md:mt-[246px] mt-[125px] flex flex-col justify-center md:container">
+    <div className="md:mt-[246px] mt-[125px] flex flex-col justify-center container md:container">
       {/* banner */}
       <div
         href="#"
-        className="banner bg-cover bg-no-repeat relative w-full flex justify-center h-[461px] bg-zinc-100  rounded-[42px] overflow-hidden"
+        className="bg-cover bg-no-repeat md:relative w-full flex justify-center h-[461px] bg-zinc-100  md:rounded-[42px] rounded-[30px] overflow-hidden"
       >
-        <svg className="z-30 absolute -bottom-14 w-36 dark:text-zinc-700 text-white">
+        <svg className="hidden md:inline-block z-30 md:absolute -bottom-14 w-36 dark:text-zinc-700 text-white">
           <use href="#curev"></use>
         </svg>
 
-        <a href="#" className="bottom-0 absolute flex justify-center">
+        <a href="#" className="bottom-0 absolute hidden md:flex justify-center">
           <svg className="z-30 h-[30px] w-[30px] rounded-full p-1 bg-violet-700 text-white">
             <use href="#arrow-b"></use>
           </svg>
         </a>
 
-        <div className="-bottom-20 absolute z-10">
+        <div className="-bottom-20 hidden md:inline-block absolute z-10">
           <div className="circle circle-lg">
             <div className="circle circle-md">
               <div className="circle circle-sm"></div>
@@ -29,13 +29,13 @@ function HomePage() {
 
       {/* boxs */}
 
-      <div className="grid grid-cols-3 mt-10 gap-x-[33px] text-xl font-DanaMedium">
+      <div className="grid md:grid-cols-3 grid-cols-1 mt-10 gap-y-3 md:gap-x-[33px] text-xl font-DanaMedium">
         <div className="rounded-[20px]  bg-violet-100  h-[99px] flex justify-between items-center px-8">
           <svg className="z-30 h-14 w-14 p-1 md:inline-block hidden">
             <use href="#education"></use>
           </svg>
           <h3>آموزش و ورکشاپ</h3>
-          <a href="#" className="md:inline-block hidden">
+          <a href="#">
             <svg className="z-30 h-10 w-10 rounded-full p-1 bg-violet-700 text-white rotate-90">
               <use href="#arrow-b"></use>
             </svg>
@@ -47,7 +47,7 @@ function HomePage() {
             <use href="#art"></use>
           </svg>
           <h3>فرهنگی و هنری</h3>
-          <a href="#" className="md:inline-block hidden">
+          <a href="#">
             <svg className="z-30 h-10 w-10 rounded-full p-1 bg-orange-300 text-white rotate-90">
               <use href="#arrow-b"></use>
             </svg>
@@ -59,7 +59,7 @@ function HomePage() {
             <use href="#media"></use>
           </svg>
           <h3>رسانه و ارتباطات</h3>
-          <a href="#" className="md:inline-block hidden">
+          <a href="#">
             <svg className="z-30 h-10 w-10 rounded-full p-1 bg-indigo-400 text-white rotate-90">
               <use href="#arrow-b"></use>
             </svg>
