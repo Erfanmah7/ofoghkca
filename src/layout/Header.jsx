@@ -216,7 +216,7 @@ function Header() {
             />
           </div>
 
-          <div>
+          {/* <div>
             <a href="#">
               <div className="relative">
                 <svg className="h-[30px] w-[30px] dark:text-white text-black ">
@@ -227,6 +227,17 @@ function Header() {
                 </span>
               </div>
             </a>
+          </div> */}
+
+          {/* dark mode */}
+          <div className="cursor-pointer" onClick={() => setMod(!mod)}>
+            <svg className="h-[30px] w-[30px]  dark:text-white text-black inline-block dark:hidden">
+              <use href="#moon-icon"></use>
+            </svg>
+
+            <svg className="h-[30px] w-[30px] dark:text-white text-black  hidden dark:inline-block">
+              <use href="#sun-icon"></use>
+            </svg>
           </div>
         </div>
       </header>
