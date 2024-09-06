@@ -191,11 +191,11 @@ function Header() {
       {/* header mobile */}
 
       <header className="inline-block md:hidden">
-        <div className="backdrop-blur-md bg-white/80  shadow w-full h-20 flex justify-between items-center px-8">
+        <div className="backdrop-blur-md bg-white/80 dark:bg-gray-800/15 shadow w-full h-20 flex justify-between items-center px-8">
           <div>
             <a href="#">
               <div>
-                <svg className="h-[43px] w-[43px] dark:text-white text-black ">
+                <svg className="h-[30px] w-[30px] dark:text-white text-black ">
                   <use href="#menu"></use>
                 </svg>
               </div>
@@ -204,7 +204,7 @@ function Header() {
 
           <div className="shrink-0 ">
             <img
-              className="h-[55px] dark:hidden inline-block bg-cover"
+              className="h-[40px] dark:hidden inline-block bg-cover"
               src="../assets/images/logo.png"
               alt="ofoghkca"
             />
@@ -219,7 +219,7 @@ function Header() {
           <div>
             <a href="#">
               <div className="relative">
-                <svg className="h-[43px] w-[43px] dark:text-white text-black ">
+                <svg className="h-[30px] w-[30px] dark:text-white text-black ">
                   <use href="#shop"></use>
                 </svg>
                 <span className="absolute right-0 top-0 flex items-center justify-center left-2.5 bg-orange-300 text-white p-px  rounded-full w-[22px] h-[22px]">
