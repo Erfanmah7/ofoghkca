@@ -204,13 +204,13 @@ function Header() {
 
           <div className="shrink-0 ">
             <img
-              className="h-[40px] dark:hidden inline-block bg-cover"
+              className="h-[45px] dark:hidden inline-block bg-cover"
               src="../assets/images/logo.png"
               alt="ofoghkca"
             />
 
             <img
-              className="h-[40px] hidden dark:inline-block bg-cover"
+              className="h-[45px] hidden dark:inline-block bg-cover"
               src="../assets/images/logodark.png"
               alt="ofoghkca"
             />
