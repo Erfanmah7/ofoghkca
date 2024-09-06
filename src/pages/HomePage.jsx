@@ -69,7 +69,7 @@ function HomePage() {
 
       {/* box card */}
 
-      <div className="w-full relative h-[389px] rounded-[25px] text-white bg-violet-700 mt-[41px] mb-[264px]">
+      <div className="hidden md:inline-block w-full relative h-[389px] rounded-[25px] text-white bg-violet-700 mt-[41px] mb-[264px]">
         <h3 className="mt-[90px] text-2xl mb-8 font-DanaMedium">
           متا فراتر از هر تابستان
         </h3>
