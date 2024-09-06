@@ -69,7 +69,7 @@ function HomePage() {
 
       {/* box card */}
 
-      <div className="hidden md:inline-block w-full relative h-[389px] rounded-[25px] text-white bg-violet-700 mt-[41px] mb-[264px]">
+      <div className="w-full relative h-[389px] rounded-[25px] text-white bg-violet-700 mt-[41px] mb-[264px]">
         <h3 className="mt-[90px] text-2xl mb-8 font-DanaMedium">
           متا فراتر از هر تابستان
         </h3>
@@ -77,7 +77,7 @@ function HomePage() {
           <span className="bg-orange-300 h-1 w-[150px] flex rounded-full"></span>
         </div>
 
-        <div className="flex absolute -bottom-25 right-0 left-0 justify-center mx-24 gap-x-[43px] ">
+        <div className="flex flex-col md:flex-row absolute -bottom-25 right-0 left-0 justify-center mx-24 items-center md:gap-x-[43px] gap-y-6">
           <div className="bg-white text-black w-[320px] h-[304px] rounded-[18px] shadow-md flex flex-col items-center justify-center px-7 pt-[49px] pb-[54px]">
             <div className="w-16 h-16 flex justify-center items-center rounded-full bg-gradient-to-t to-orange-300 from-white">
               <svg className="z-30 h-10 w-10 translate-y-7">
@@ -102,8 +102,9 @@ function HomePage() {
                 بررسی حوزه فعالیت و ارائه روش‌های نوین
               </p>
             </div>
-            <div className="z-20 bg-white/20 dark:bg-zinc-700/20 absolute -rotate-12 w-[320px] h-[304px] rounded-[18px]"></div>
+            <div className="z-20 hidden md:inline-block bg-white/20 dark:bg-zinc-700/20 absolute -rotate-12 w-[320px] h-[304px] rounded-[18px]"></div>
           </div>
+
           <div className="bg-white text-black w-[320px] h-[304px] rounded-[18px] shadow-md flex flex-col items-center justify-center px-7 pt-[49px] pb-[54px]">
             <div className="w-16 h-16 flex justify-center items-center rounded-full bg-gradient-to-t to-orange-300 from-white">
               <svg className="z-30 h-10 w-10 translate-y-7">
