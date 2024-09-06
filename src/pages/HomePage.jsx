@@ -2,7 +2,7 @@ import React from "react";
 
 function HomePage() {
   return (
-    <div className="md:mt-[346px] my-[120px] flex flex-col justify-center md:container">
+    <div className="md:mt-[346px] mt-[110px] mb-4 flex flex-col justify-center md:container">
       {/* banner */}
       <div
         href="#"
