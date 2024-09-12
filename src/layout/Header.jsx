@@ -18,7 +18,6 @@ function Header() {
 
   return (
     <>
-
       {/* header top */}
       <div className="relative z-20">
         <a
@@ -194,8 +193,9 @@ function Header() {
 
       {/* header mobile */}
       <header className="sticky top-0 z-50 justify-center flex md:hidden">
-        <div className="bg-slate-300 px-2 pt-3 z-20 w-64 absolute right-0 top-0 bottom-0 h-screen">
-          {/* search */}
+
+        {/* menu */}
+        {/* <div className="bg-slate-300 px-2 pt-3 z-20 w-64 absolute right-0 top-0 bottom-0 h-screen">
           <div className=" relative flex items-center">
             <input
               type="text"
@@ -211,7 +211,7 @@ function Header() {
               </svg>
             </a>
           </div>
-        </div>
+        </div> */}
 
         <div className="backdrop-blur-md bg-white/80 dark:bg-zinc-800/95 shadow w-full h-20 flex justify-between items-center px-4">
           {/* menu icon */}
@@ -252,7 +252,6 @@ function Header() {
           </div>
         </div>
       </header>
-
     </>
   );
 }
