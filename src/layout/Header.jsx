@@ -17,20 +17,24 @@ function Header() {
   };
 
   return (
-    <div className="z-50 fixed justify-center flex flex-col top-0 left-0 right-0 pb-[40px]">
+    <>
+
       {/* header top */}
-      <a
-        href="#"
-        className="flex items-center justify-center gap-x-2 bg-violet-700 w-full h-[30px] md:h-[68px] font-MorabbaMedium tracking-normal text-xs md:text[22px]"
-      >
-        <h3 className="text-white">
-          {" "}
-          به انتهای افق بنگر؛ من و تو باید پرچم خودمان را آنجا بزنیم، در انتهای
-          افق ..
-        </h3>
-      </a>
+      <div className="relative z-20">
+        <a
+          href="#"
+          className="flex items-center z-10 justify-center gap-x-2 bg-violet-700 w-full h-[30px] md:h-[68px] font-MorabbaMedium tracking-normal text-xs md:text[22px]"
+        >
+          <h3 className="text-white">
+            {" "}
+            به انتهای افق بنگر؛ من و تو باید پرچم خودمان را آنجا بزنیم، در
+            انتهای افق ..
+          </h3>
+        </a>
+      </div>
+
       {/* backdrop-blur-xl bg-white/30 */}
-      <header className="md:inline-block hidden">
+      <header className="sticky z-50 top-0 md:flex md:flex-col hidden">
         {/* header main */}
         <div className="mt-[31px] hidden md:flex justify-between md:container items-center gap-x-10 ">
           {/* logo */}
@@ -189,9 +193,28 @@ function Header() {
       </header>
 
       {/* header mobile */}
+      <header className="sticky top-0 z-50 justify-center flex md:hidden">
+        <div className="bg-slate-300 px-2 pt-3 z-20 w-64 absolute right-0 top-0 bottom-0 h-screen">
+          {/* search */}
+          <div className=" relative flex items-center">
+            <input
+              type="text"
+              placeholder="چی میخوای؟"
+              className="rounded-full w-[300px] h-[35px] px-4 outline-none dark:bg-zinc-500 dark:placeholder-white bg-zinc-100"
+            />
+            <a
+              href="#"
+              className="absolute flex items-center justify-center left-1.5 bg-orange-300 rounded-full w-[25px] h-[25px]"
+            >
+              <svg className="text-white h-4 w-4">
+                <use href="#search"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
 
-      <header className="inline-block md:hidden">
         <div className="backdrop-blur-md bg-white/80 dark:bg-zinc-800/95 shadow w-full h-20 flex justify-between items-center px-4">
+          {/* menu icon */}
           <div>
             <a href="#">
               <div>
@@ -202,6 +225,7 @@ function Header() {
             </a>
           </div>
 
+          {/* logo */}
           <div className="shrink-0 ">
             <img
               className="h-[45px] dark:hidden inline-block bg-cover"
@@ -216,19 +240,6 @@ function Header() {
             />
           </div>
 
-          {/* <div>
-            <a href="#">
-              <div className="relative">
-                <svg className="h-[30px] w-[30px] dark:text-white text-black ">
-                  <use href="#shop"></use>
-                </svg>
-                <span className="absolute right-0 top-0 flex items-center justify-center left-2.5 bg-orange-300 text-white dark:text-black p-px text-xs rounded-full w-[17px] h-[17px]">
-                  3
-                </span>
-              </div>
-            </a>
-          </div> */}
-
           {/* dark mode */}
           <div className="cursor-pointer" onClick={() => setMod(!mod)}>
             <svg className="h-[30px] w-[30px]  dark:text-white text-black inline-block dark:hidden">
@@ -241,7 +252,8 @@ function Header() {
           </div>
         </div>
       </header>
-    </div>
+
+    </>
   );
 }
 
