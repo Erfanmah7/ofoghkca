@@ -22,9 +22,9 @@ function FormPage() {
   };
 
   return (
-    <div className="container mt-[246px]">
+    <div className="container mt-[30px] md:mt-[115px]">
       <form
-        className="rounded-md shadow-sm bg-white border-zinc-200 border dark:border-zinc-500 py-5 dark:bg-zinc-700 mt-48"
+        className="rounded-md shadow-sm bg-white border-zinc-200 border dark:border-zinc-500 py-5 dark:bg-zinc-700"
         onChange={changeHandler}
       >
         <div className="grid md:grid-cols-3 gap-3 justify-center md:p-5 dark:text-white">
