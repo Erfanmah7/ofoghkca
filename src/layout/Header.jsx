@@ -216,7 +216,7 @@ function Header() {
         <div className="backdrop-blur-md bg-white/80 dark:bg-zinc-800/95 shadow w-full h-20 flex justify-between items-center px-4">
           {/* menu icon */}
           <div>
-            <a href="#">
+            <a href="form">
               <div>
                 <svg className="h-[30px] w-[30px] dark:text-white text-black ">
                   <use href="#menu"></use>
